@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">High 'n Safe</h1>
+
+  </div>
+</div>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Mapa por RPA</h2>
+      <p>Mapa de Calor dos Chamados.</p>
+      <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+      <p><a class="btn btn-secondary" href="{{url_for('opcaorpa') }}" role="button">View details &raquo;</a></p>
+    </div>
+
+
+    <div class="col-md-4">
+      <h2>Mapa Acidendes Com Vitimas</h2>
+      <p>Mapa de Acidentes Com Vitimas.</p>
+      <p><a class="btn btn-secondary" href="{{url_for('mapaAcidentesVitimas') }}" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Mapa Acidentes Com Vitimas Fatais</h2>
+      <p>Mapa de acidentes com vitimas.</p>
+      <p><a class="btn btn-secondary" href="{{url_for('mapaAcidentesVitimasFatais') }}" role="button">View details &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Mapa de calor</h2>
+      <p>Mapa de Calor Vistorias.</p>
+      <p><a class="btn btn-secondary" href="{{url_for('mapaCalorVistoria') }}" role="button">View details &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Mapa de calor</h2>
+      <p>Mapa de Calor Colocação Lonas .</p>
+      <p><a class="btn btn-secondary" href="{{url_for('mapaLonas') }}" role="button">View details &raquo;</a></p>
+    </div>
+
+
+  </div>
+
+  <hr>
+
+</div> <!-- /container -->
+{% endblock %}
